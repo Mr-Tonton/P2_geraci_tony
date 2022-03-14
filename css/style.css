@@ -96,7 +96,6 @@ header ul li:hover a::before {
     top: -51px;
     left: 0;
     background-color: #0065FC;
-    color: #0065FC;
 }
 
 /* ========== SECTION: SEARCH ========== */
@@ -132,6 +131,7 @@ header ul li:hover a::before {
     position: absolute;
     left: 45px;
     border: 1px solid #F2F2F2;
+    font-weight: bold;
 } 
 
 .input-form #city-search::placeholder {
@@ -155,7 +155,8 @@ header ul li:hover a::before {
 }
 
 .input-form .send:hover {
-    border: 1px solid black;
+    background-color: #DEEBFF;
+    color: #0065FC;
     transition: .3s;
 }
 
@@ -164,47 +165,120 @@ header ul li:hover a::before {
 /* ---- Search filter */
 
 .research .filter {
-    margin-top: 20px;
-    width: 950px;
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+}
+
+.research .filter h {
+    margin-top: 30px;
+}
+
+.research .filter-ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.research .filter-li {
+    position: relative;
+    border: #D7D7D7 solid 2px;
+    border-radius: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+    padding: 12px 20px 12px 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.research .filter-li:hover {
+    background-color: #0065FC;
+    color: white;
+    transition: .3s;
+}
+
+.research .filter-li i {
+    position: absolute;
+    left: -11px;
+    top: -2px;
+    padding: 13px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border: 2px solid #DEEBFF;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.research .search-info {
+    display: flex;
+}
+
+.research .search-info i {
+    display: flex;
+    color: #0065FC;
+    width: 8px;
+    height: 8px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin: 5px 10px 0 0;
+    border: #D7D7D7 1px solid;
+    border-radius: 50%;
+}
+
+/* ========== SECTION ACCOMMODATION ========== */
+
+.accommodation {
+    background-color: aqua;
+}
+
+.accommodation .card {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 250px;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+.accommodation .card-image img {
+    display: flex;
+    width: 240px;
+    height: 115px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 5px;
+    object-fit: cover;
+}
+
+.accommodation .card-body {
+    margin: 0 10px;
+}
+
+.accommodation .card-name h2 {
+    margin: 5px 10px;
+}
+
+.accommodation .card-title h2 {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+}
+
+.accommodation .card-info p {
+    margin: 5px 0 0 0;
+    font-size: 14px;
+}
+
+.accommodation .card-info span {
     font-weight: bold;
 }
 
-.research .filter p:first-child {
-    margin-top: 18px;
-}
-
-.research .filter a {
-    display: flex;
-    align-items: center;
-    border: 2px solid #D7D7D7;
-    border-radius: 25px;
-}
-
-.research .filter-icon {
-    position: relative;
-}
-
-.research .filter-icon i {
-    position: absolute;
-    top: -27px;
-    left: -4px;
-    padding: 19px;
-    border-radius: 100%;
-    background-color: #DEEBFF;
+.accommodation .card-stars i {
     color: #0065FC;
+    font-size: 12px;
+    margin: 0 0 10px 0;
+    letter-spacing: -3px;
 }
 
-.research .filter a p {
-    padding: 0 30px 0 60px;
-    margin: 0;
-}
-
-.research .filter a:hover {
-    color: white;
-    background-color: #0065FC;
-    transition: 1s;
+.accommodation .card-stars .star5 {
+    color: #F2F2F2;
 }
 
 
@@ -285,6 +359,7 @@ header ul li:hover a::before {
 
     .research .input-form{
         margin-top: 30px;
+        margin-bottom: 0;
     }
 
     .research .send {
@@ -300,5 +375,24 @@ header ul li:hover a::before {
         border-radius: 15px;
         left: 290px;
         cursor: pointer;
+    }
+
+    .research .icon-send:hover {
+        background-color: #DEEBFF;
+        color: #0065FC;
+        transition: .3s;
+    }
+
+    .research .filter {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .research .filter-ul {
+        padding: 0;
+    }
+
+    .research h3 {
+        margin: 0;
     }
 }
