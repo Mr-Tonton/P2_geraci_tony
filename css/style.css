@@ -17,6 +17,7 @@
     list-style-type: none;
     font-family: "raleway-medium", sans-serif;
     font-size: 17px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -150,7 +151,7 @@ header ul li:hover a::before {
     border: 1px solid #F2F2F2;
     padding: 15px;
     border-radius: 0 15px 15px 0;
-    left: 320px;
+    left: 280px;
     cursor: pointer;
 }
 
@@ -161,7 +162,6 @@ header ul li:hover a::before {
 }
 
 
-
 /* ---- Search filter */
 
 .research .filter {
@@ -169,7 +169,7 @@ header ul li:hover a::before {
     width: 100%;
 }
 
-.research .filter h {
+.research .filter h3 {
     margin-top: 30px;
 }
 
@@ -222,24 +222,56 @@ header ul li:hover a::before {
     margin: 5px 10px 0 0;
     border: #D7D7D7 1px solid;
     border-radius: 50%;
+    font-size: 13px;
 }
 
 /* ========== SECTION ACCOMMODATION ========== */
 
 .accommodation {
-    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 50px 50px;
 }
 
-.accommodation .card {
+/* ---- left part ---- */
+
+.city-accommodation {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2F2F2;
+    width: 65%;
+    border-radius: 25px;
+}
+
+.city-accommodation h2 {
+    font-size: 22px;
+    margin:  40px 0 0 30px;
+}
+
+.city-accommodation h3 {
+    font-size: 18px;
+    margin:  10px 0 40px 40px;
+}
+
+.city-accommodation .card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.city-accommodation .card {
     display: flex;
     justify-content: center;
     background-color: white;
     width: 250px;
     border-radius: 25px;
-    margin-left: 20px;
+    margin: 15px 10px;
+    box-shadow: #D7D7D7 0 0 15px;
+
 }
 
-.accommodation .card-image img {
+.city-accommodation .card-image img {
     display: flex;
     width: 240px;
     height: 115px;
@@ -248,60 +280,192 @@ header ul li:hover a::before {
     object-fit: cover;
 }
 
-.accommodation .card-body {
+.city-accommodation .card-body {
     margin: 0 10px;
 }
 
-.accommodation .card-name h2 {
-    margin: 5px 10px;
-}
-
-.accommodation .card-title h2 {
+.city-accommodation .card-title h3 {
     margin: 10px 0 0 0;
     font-size: 16px;
 }
 
-.accommodation .card-info p {
+.city-accommodation .card-info p {
     margin: 5px 0 0 0;
     font-size: 14px;
 }
 
-.accommodation .card-info span {
+.city-accommodation .card-info span {
     font-weight: bold;
 }
 
-.accommodation .card-stars i {
+.city-accommodation .card-stars i {
     color: #0065FC;
     font-size: 12px;
     margin: 0 0 10px 0;
     letter-spacing: -3px;
 }
 
-.accommodation .card-stars .star5 {
-    color: #F2F2F2;
+.city-accommodation .cannebiere-card .card-stars .star5,
+.city-accommodation .mouettes-card .card-stars .star5,
+.city-accommodation .mer-card .card-stars .star5,
+.city-accommodation .mer-card .card-stars .star4,
+.city-accommodation .panier-card .card-stars .star5 {
+    color: #D7D7D7;
+}
+
+
+/* ---- right part ---- */
+
+.most-popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    width: 32%;
+    border-radius: 25px;
+}
+
+.most-popular .most-popular-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.most-popular .most-popular-title h2 {
+    font-size: 22px;
+    margin:  40px 0 0 30px;
+}
+
+.most-popular .most-popular-title i {
+    font-size: 22px;
+    margin:  40px 0 0 30px;
+}
+
+
+
+.most-popular .card-container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+.most-popular a {
+    display: flex;
+}
+
+.most-popular .card {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: 345px;
+    height: 150px;
+    border-radius: 25px;
+    box-shadow: #D7D7D7 0 0 15px;
+
+}
+
+.most-popular .card-image {
+    display: flex;
+    align-items: center;
+}
+
+.most-popular .card-image img {
+    display: flex;
+    width: 135px;
+    height: 140px;
+    margin-left: 5px;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+.most-popular .card-body {
+    position: relative;
+    margin: 5px 20px 0 20px;
+    padding: 0;
+    font-size: 16px;
+}
+
+.most-popular .card-body h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.most-popular .card-info p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.most-popular .card-info span {
+    font-weight: bold;
+}
+
+.most-popular .card-stars i {
+    position: relative;
+    color: #0065FC;
+    font-size: 12px;
+    top: 45px;
+    letter-spacing: -3px;
+}
+
+.most-popular .eau-card .card-stars .star5,
+.most-popular .blanc-card .card-stars .star5 {
+    color: #D7D7D7;
 }
 
 
 /* ========== MEDIA QUERIES ========== */
 
-@media (max-width : 992px) {
 
-    /* ---- header ---- */
+/* <<<<< BREAKPOINT ACCOMMODATION */
 
-    header ul li a {
-        font-size: 22px;
+@media (max-width: 1259px) {
+    .accommodation {
+        flex-direction: column-reverse;
     }
 
-    header .logo img{
-        width: 130px;
+    .accommodation .most-popular {
+        width: 100%;
+        border-radius: 0;
+        padding-bottom: 20px;
     }
 
-    header ul li:hover a::before {
-        top: -47px;
+    .accommodation .most-popular .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .accommodation .most-popular .most-popular-title {
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .accommodation .most-popular .card-container .card {
+        margin: 10px;
     }
 
 
+    .accommodation .city-accommodation {
+        width: 100%;
+        background-color: white;
+    }
+
+    .accommodation .city-accommodation .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .accommodation .city-accommodation .card-container .card {
+        margin: 20px;
+    }
 }
+
+
+/* <<<<< PHONE >>>>> */
 
 @media (max-width: 768px) {
 
@@ -311,8 +475,8 @@ header ul li:hover a::before {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 200px;
-        margin: 40px 0;
+        height: 150px;
+        margin: 0;
     }
 
     header .logo {
@@ -346,16 +510,20 @@ header ul li:hover a::before {
         content: '';
         width: 100%;
         height: 4px;
-        top: 50px;
+        top: 30px;
         left: 0;
         background-color: #D7D7D7;
     }
 
     header ul li:hover a::before {
-        top: 50px;
+        top: 30px;
     }
 
     /* ---- Section research ---- */
+
+    .research {
+        margin: 0 20px;
+    }
 
     .research .input-form{
         margin-top: 30px;
@@ -394,5 +562,42 @@ header ul li:hover a::before {
 
     .research h3 {
         margin: 0;
+    }
+
+    /* ---- Section Accommodation ---- */
+
+    .accommodation {
+        margin: 0;
+    }
+
+    .accommodation .most-popular-title {
+        margin-bottom: 10px;
+    }
+
+    .accommodation .city-accommodation .card {
+        width: 335px;
+        height: 200px;
+        margin: 0;
+    }
+    
+    .accommodation .city-accommodation .card-image img {
+        display: flex;
+        width: 325px;
+        height: 115px;
+        border-radius: 20px 20px 0 0;
+        margin-top: 5px;
+        object-fit: cover;
+    }
+
+    .accommodation .most-popular .card-container {
+        flex-direction: column;
+    }
+
+    .accommodation .city-accommodation .card-container .card {
+        margin: 10px;
+    }
+
+    .city-accommodation h2 {
+        margin: 40px 0 10px 30px;
     }
 }
