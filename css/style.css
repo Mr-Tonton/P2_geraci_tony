@@ -23,12 +23,12 @@ a {
 
 @font-face {
     font-family: "raleway-bold";
-    src: url(/assets/fonts/Raleway/static/Raleway-ExtraBold.ttf) format("truetype");
+    src: url(../assets/fonts/Raleway/static/Raleway-ExtraBold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "raleway-medium";
-    src: url(/assets/fonts/Raleway/static/Raleway-Medium.ttf) format("truetype");
+    src: url(../assets/fonts/Raleway/static/Raleway-Medium.ttf) format("truetype");
 }
 
 
@@ -708,6 +708,10 @@ footer {
         margin-top: 30px;
         margin-bottom: 0;
     }
+
+    .research .input-form #city-search {
+        padding: 15px 40px 15px 20px;
+    } 
 
     .research .send {
         display: none;
