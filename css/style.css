@@ -23,12 +23,12 @@ a {
 
 @font-face {
     font-family: "raleway-bold";
-    src: url(./assets/fonts/Raleway/static/Raleway-ExtraBold.ttf) format("truetype");
+    src: url(/assets/fonts/Raleway/static/Raleway-ExtraBold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: "raleway-medium";
-    src: url(./assets/fonts/Raleway/static/Raleway-Medium.ttf) format("truetype");
+    src: url(/assets/fonts/Raleway/static/Raleway-Medium.ttf) format("truetype");
 }
 
 
