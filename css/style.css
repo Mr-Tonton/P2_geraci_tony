@@ -87,6 +87,7 @@ header ul li a {
 
 header ul a:hover {
     color: #0065FC;
+    text-shadow: #0065FC 0 0 1px;
 }
 
 header ul li:hover a::before {
@@ -195,6 +196,11 @@ header ul li:hover a::before {
     transition: .3s;
 }
 
+.research .filter-li:hover i {
+    border: 2px solid #0065FC;
+    transition: .3s;
+}
+
 .research .filter-li i {
     position: absolute;
     left: -11px;
@@ -268,7 +274,12 @@ header ul li:hover a::before {
     border-radius: 25px;
     margin: 15px 10px;
     box-shadow: #D7D7D7 0 0 15px;
+}
 
+.city-accommodation .card:hover {
+    background-color: #DEEBFF;
+    box-shadow: black 0 0 15px;
+    transition: .3s;
 }
 
 .city-accommodation .card-image img {
@@ -287,6 +298,11 @@ header ul li:hover a::before {
 .city-accommodation .card-title h3 {
     margin: 10px 0 0 0;
     font-size: 16px;
+}
+
+.city-accommodation .afficher-plus:hover {
+    text-shadow: #0065FC 0 0 1px;
+    color: #0065FC;
 }
 
 .city-accommodation .card-info p {
@@ -365,7 +381,12 @@ header ul li:hover a::before {
     height: 150px;
     border-radius: 25px;
     box-shadow: #D7D7D7 0 0 15px;
+}
 
+.most-popular .card:hover {
+    background-color: #DEEBFF;
+    box-shadow: black 0 0 15px;
+    transition: .3s;
 }
 
 .most-popular .card-image {
@@ -418,10 +439,143 @@ header ul li:hover a::before {
 }
 
 
+/* ========== SECTION ACTIVITY ========== */
+
+.activity{
+    margin: 0 50px;
+}
+
+.city-activity {
+    margin-bottom: 80px;
+}
+
+.activity .city-activity h2 {
+    padding: 20px 0 10px 0;
+    font-size: 22px;
+}
+
+.activity .city-activity .card-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    height: 445px;
+}
+
+.activity .city-activity .card-container .card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow:#D7D7D7 0 0 15px;
+    width: 22%;
+
+}
+
+.activity .city-activity .card-container .card:hover {
+    background-color: #DEEBFF;
+    box-shadow: black 0 0 15px;
+    transition: .3s;
+}
+
+
+.activity .city-activity .card-container .card h3{
+    font-size: 15px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.activity .city-activity .card-container .card img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+}
+
+.activity .city-activity .card-container .card-one,
+.activity .city-activity .card-container .card-four
+ {
+    height: 445px;
+}
+
+.activity .city-activity .card-container .card-one img,
+.activity .city-activity .card-container .card-four img
+ {
+    height: 400px;
+}
+
+.activity .city-activity .card-container .card-two {
+    height: 240px;
+}
+
+.activity .city-activity .card-container .card-two img {
+    height: 195px;
+}
+
+.activity .city-activity .card-container .card-three {
+    height: 170px;
+}
+
+.activity .city-activity .card-container .card-three img {
+    height: 125px;
+}
+
+.activity .city-activity .card-container .card-five {
+    height: 200px;
+}
+
+.activity .city-activity .card-container .card-five img {
+    height: 155px;
+}
+
+.activity .city-activity .card-container .card-six {
+    height: 210px;
+}
+
+.activity .city-activity .card-container .card-six img {
+    height: 165px;
+}
+
+
+/* ========== FOOTER ========== */
+
+footer {
+    background-color: #F2F2F2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 50px;
+}
+
+.footer-container h2 {
+    margin-top: 50px;
+}
+
+.footer-container h2 a {
+    font-size: 18px;
+}
+
+.footer-container a:hover{
+    color: #0065FC;
+    text-shadow: #0065FC 0 0 1px;
+}
+
+
+.footer-container ul {
+    padding: 0;
+}
+
+.footer-container ul li {
+    padding-bottom: 15px;
+}
+
+
+
+
 /* ========== MEDIA QUERIES ========== */
 
 
-/* <<<<< BREAKPOINT ACCOMMODATION */
+/* <<<<< BREAKPOINT ACCOMMODATION + ACTIVITY*/
 
 @media (max-width: 1259px) {
     .accommodation {
@@ -462,8 +616,35 @@ header ul li:hover a::before {
     .accommodation .city-accommodation .card-container .card {
         margin: 20px;
     }
-}
 
+    .activity .city-activity .card-container {
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        height: auto;
+    }
+
+    
+    .activity .city-activity .card-container .card-one,
+    .activity .city-activity .card-container .card-two, 
+    .activity .city-activity .card-container .card-three, 
+    .activity .city-activity .card-container .card-four,
+    .activity .city-activity .card-container .card-five, 
+    .activity .city-activity .card-container .card-six {
+        width: 335px;
+        height: 200px;
+        margin: 10px;
+    }
+    
+    .activity .city-activity .card-container .card-one img,
+    .activity .city-activity .card-container .card-two img, 
+    .activity .city-activity .card-container .card-three img, 
+    .activity .city-activity .card-container .card-four img,
+    .activity .city-activity .card-container .card-five img, 
+    .activity .city-activity .card-container .card-six img {
+        height: 155px;
+    }
+
+}
 
 /* <<<<< PHONE >>>>> */
 
@@ -525,7 +706,7 @@ header ul li:hover a::before {
         margin: 0 20px;
     }
 
-    .research .input-form{
+    .research .input-form {
         margin-top: 30px;
         margin-bottom: 0;
     }
@@ -574,6 +755,10 @@ header ul li:hover a::before {
         margin-bottom: 10px;
     }
 
+    .activity .city-activity {
+        margin-bottom: 50px;
+    }
+
     .accommodation .city-accommodation .card {
         width: 335px;
         height: 200px;
@@ -600,4 +785,10 @@ header ul li:hover a::before {
     .city-accommodation h2 {
         margin: 40px 0 10px 30px;
     }
-}
+
+    /* ---- Footer ---- */
+
+    
+    .footer-container {
+        flex-direction: column;
+    }
