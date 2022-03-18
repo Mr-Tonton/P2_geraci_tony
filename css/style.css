@@ -1,3 +1,11 @@
+/* ========== FONT ========== */
+
+@font-face {
+    font-family: "raleway-medium";
+    src: url(../assets/fonts/Raleway/static/Raleway-Medium.ttf) format("truetype");
+}
+
+
 /* ========== RESET ==========  */
 
 * {
@@ -19,17 +27,6 @@ a {
 }
 
 
-/* ========== FONT ========== */
-
-@font-face {
-    font-family: "raleway-bold";
-    src: url(../assets/fonts/Raleway/static/Raleway-ExtraBold.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "raleway-medium";
-    src: url(../assets/fonts/Raleway/static/Raleway-Medium.ttf) format("truetype");
-}
 
 
 /* ========== HEADER ========== */
@@ -107,7 +104,6 @@ header ul li:hover a::before {
 
 .research h1 {
     font-size: 22px;
-    font-family: "raleway-bold";
     margin-bottom: 0;
 }
 
@@ -136,8 +132,8 @@ header ul li:hover a::before {
 } 
 
 .research .input-form #city-search::placeholder {
+    opacity: 1;
     color: black;
-    font-weight: bold;
 }
 
 .research .input-form #city-search:focus {
@@ -301,7 +297,7 @@ header ul li:hover a::before {
     font-size: 16px;
 }
 
-.accommodation .city-accommodation .afficher-plus:hover {
+.accommodation .city-accommodation > a:hover {
     text-shadow: #0065FC 0 0 1px;
     color: #0065FC;
 }
