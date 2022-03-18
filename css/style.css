@@ -188,6 +188,7 @@ header ul li:hover a::before {
 .research .filter-li:hover {
     background-color: #0065FC;
     color: white;
+    transform: scale(1.05);
     transition: .3s;
 }
 
@@ -276,6 +277,7 @@ header ul li:hover a::before {
 .accommodation .city-accommodation .card:hover {
     background-color: #DEEBFF;
     box-shadow: black 0 0 15px;
+    transform: scale(1.03);
     transition: .3s;
 }
 
@@ -380,6 +382,7 @@ header ul li:hover a::before {
 .accommodation .most-popular .card:hover {
     background-color: #DEEBFF;
     box-shadow: black 0 0 15px;
+    transform: scale(1.03);
     transition: .3s;
 }
 
@@ -467,6 +470,7 @@ header ul li:hover a::before {
 .activity .city-activity .card-container .card:hover {
     background-color: #DEEBFF;
     box-shadow: black 0 0 15px;
+    transform: scale(1.03);
     transition: .3s;
 }
 
