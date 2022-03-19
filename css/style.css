@@ -163,7 +163,7 @@ header li:hover a::before {
     width: 100%;
 }
 
-.research__filter h3 {
+.research__filter h2 {
     margin-top: 30px;
 }
 
@@ -741,8 +741,8 @@ footer {
         padding: 0;
     }
 
-    .research h3 {
-        margin: 0;
+    .research__filter h2 {
+        margin: 20px 0 0 0;
     }
 
 
