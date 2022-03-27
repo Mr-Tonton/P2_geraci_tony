@@ -608,8 +608,26 @@ footer {
         flex-wrap: wrap;
     }
 
-    .accommodation__city .card-container .card {
-        margin: 20px;
+    .accommodation__city .card {
+        width: 100%;
+        max-width: 335px;
+        height: 200px;
+        margin: 10px;
+    }
+
+    .accommodation__city .card a {
+        width: 100%;
+        max-width: 335px;
+    }
+    
+    .accommodation__city .card-image img {
+        display: flex;
+        width: 97%;
+        margin: auto;
+        height: 115px;
+        border-radius: 20px 20px 0 0;
+        margin-top: 5px;
+        object-fit: cover;
     }
 
 
@@ -758,27 +776,8 @@ footer {
         margin: 0;
     }
 
-    .accommodation__city .card {
-        max-width: 335px;
-        height: 200px;
-        margin: 0;
-    }
-    
-    .accommodation__city .card-image img {
-        display: flex;
-        max-width: 325px;
-        height: 115px;
-        border-radius: 20px 20px 0 0;
-        margin-top: 5px;
-        object-fit: cover;
-    }
-
     .accommodation__city h2 {
         margin: 40px 0 10px 20px;
-    }
-
-    .accommodation__city .card-container .card {
-        margin: 10px;
     }
 
     .most-popular-title {
