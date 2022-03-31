@@ -728,11 +728,11 @@ footer {
     .research__input-form .send {
         border-radius: 15px;
         padding: 15px;
-        left: 220px;
+        left: 230px;
     }
     
-    .research__input-form .send p {
-        display: none;  
+    .research__input-form .send {
+        font-size: 0;  
     }
 
     .research__input-form .send i {
