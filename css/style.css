@@ -4,7 +4,8 @@
     box-sizing: border-box;
     list-style-type: none;
     font-family: 'Raleway', sans-serif;
-    font-size: 17px;
+    font-weight: 500;
+    font-size: 15px;
     scroll-behavior: smooth;
 }
 
@@ -105,6 +106,7 @@ main {
 .research h1 {
     font-size: 22px;
     margin-bottom: 0;
+    font-weight: 800;
 }
 
 .research p {
@@ -117,7 +119,8 @@ main {
 }
 
 .research__input-form label i {
-    padding: 16px;
+    padding: 15px;
+    font-size: 18px;
     border: 1px solid var(--grey-color);
     border-radius: 15px 0 0 15px;
     background-color: var(--grey-color);
@@ -128,12 +131,13 @@ main {
     position: absolute;
     left: 45px;
     border: 1px solid var(--grey-color);
-    font-weight: bold;
 } 
 
 .research__input-form #city-search::placeholder {
     opacity: 1;
     color: #000;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .research__input-form #city-search:focus {
@@ -144,6 +148,8 @@ main {
     position: absolute;
     color: #fff;
     height: 100%;
+    font-size: 17px;
+    font-weight: 600;
     background-color: var(--primary-color);
     border: 1px solid var(--grey-color);
     padding: 15px;
@@ -176,6 +182,8 @@ main {
 
 .research__filter h2 {
     margin-top: 30px;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 .research__filter ul {
@@ -189,8 +197,9 @@ main {
     border-radius: 25px;
     margin-right: 25px;
     margin-bottom: 15px;
-    padding: 12px 20px 12px 50px;
-    font-weight: bold;
+    padding: 10px 20px 10px 50px;
+    font-size: 18px;
+    font-weight: 800;
     cursor: pointer;
 }
 
@@ -259,6 +268,7 @@ main {
 
 .accommodation__city h2 {
     font-size: 22px;
+    font-weight: 800;
     margin:  40px 0 0 30px;
 }
 
@@ -300,6 +310,7 @@ main {
 
 .accommodation__city .card-title h3 {
     margin: 10px 0 0 0;
+    font-weight: 800;
     font-size: 16px;
 }
 
@@ -314,7 +325,7 @@ main {
 }
 
 .accommodation__city .card-info span {
-    font-weight: bold;
+    font-weight: 800;
     font-size: 14px;
 }
 
@@ -331,7 +342,7 @@ main {
 
 .accommodation__city > a p {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 800;
     margin:  10px 0 40px 40px;
 }
 
@@ -357,6 +368,7 @@ main {
 
 .accommodation__most-popular .most-popular-title h2 {
     font-size: 22px;
+    font-weight: 800;
     margin:  40px 0 0 30px;
 }
 
@@ -408,11 +420,12 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    margin: 15px;
+    margin: 17px;
 }
 
 .accommodation__most-popular .card-title h3 {
-    margin: 0;
+    margin: 0 0 5px 0;
+    font-weight: 800;
 }
 
 .accommodation__most-popular .card-title p {
@@ -421,7 +434,7 @@ main {
 }
 
 .accommodation__most-popular .card-title span {
-    font-weight: bold;
+    font-weight: 800;
     font-size: 14px;
 }
 
@@ -451,6 +464,7 @@ main {
 .activity__city h2 {
     padding: 20px 0 10px 0;
     font-size: 22px;
+    font-weight: 800;
 }
 
 .activity__city .card-container {
@@ -479,6 +493,7 @@ main {
 
 .activity__city .card-container .card h3 {
     font-size: 15px;
+    font-weight: 800;
     margin-left: 20px;
     margin-top: 10px;
 }
@@ -541,6 +556,7 @@ footer {
 
 .footer-container h2 a {
     font-size: 18px;
+    font-weight: 800;
 }
 
 .footer-container a:hover{
@@ -722,7 +738,7 @@ footer {
     }
 
     .research__input-form #city-search {
-        padding: 15px 0px 15px 10px;
+        padding: 15px 10px 15px 10px;
     } 
 
     .research__input-form .send {
