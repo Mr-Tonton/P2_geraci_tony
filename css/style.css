@@ -325,7 +325,7 @@ main {
 }
 
 .accommodation__city .card-info span {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 14px;
 }
 
@@ -350,6 +350,7 @@ main {
 /* ---- right part ---- */
 
 .accommodation__most-popular {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -372,9 +373,22 @@ main {
     margin:  40px 0 0 30px;
 }
 
+.accommodation__most-popular .most-popular-title .merge-icon {
+    position: relative;
+}
+
 .accommodation__most-popular .most-popular-title i {
-    font-size: 22px;
+    font-size: 20px;
     margin:  40px 0 0 30px;
+}
+
+.accommodation__most-popular .most-popular-title .fa-caret-right {
+    position: absolute;
+    font-size: 15px;
+    right: -1px;
+    bottom: 9px;
+    z-index: 2;
+    transform: rotate(-45deg);
 }
 
 .accommodation__most-popular .card-container {
@@ -434,7 +448,7 @@ main {
 }
 
 .accommodation__most-popular .card-title span {
-    font-weight: 800;
+    font-weight: 700;
     font-size: 14px;
 }
 
