@@ -25,11 +25,12 @@ a {
 
 /* ========== HEADER ========== */
 
-header {
+.header-container {
+    max-width: 1450px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     height: 120px;
-    margin: 0 30px;
 }
 
 /* ---- Logo ---- */
@@ -89,7 +90,7 @@ header li:hover a::before {
 
 /* ========== MAIN ========== */
 
-main {
+.main-container {
     max-width: 1450px;
     margin: auto;
 }
@@ -561,7 +562,9 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    margin: 0 50px;
+    max-width: 1450px;
+    padding: 0 50px;
+    margin: 0 auto;
 }
 
 .footer-container h2 {
@@ -691,7 +694,7 @@ footer {
 
     /* ---- header ---- */
 
-    header {
+    .header-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -829,6 +832,7 @@ footer {
     .footer-container {
         flex-direction: column;
         padding-top: 50px;
+        padding: 50px 0 0 0;
         margin: 0 0 0 40px;
     }
 
